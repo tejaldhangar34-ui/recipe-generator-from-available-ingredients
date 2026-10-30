@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe Generator</title>
+
+    <link rel="stylesheet" href="/Static/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h2>🍴 Recipe Generator</h2>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#recipes">Recipes</a>
+        </div>
+    </nav>
+
+
+    <!-- Home Section -->
+    <section id="home">
+
+        <h1>Recipe Generator</h1>
+
+        <p>
+            Enter the ingredients you have and discover a recipe!
+        </p>
+
+        <label>Enter Available Ingredients:</label>
+        <br><br>
+
+        <input
+            type="text"
+            id="ingredients"
+            placeholder="e.g. rice, egg"
+        >
+
+        <button onclick="generateRecipe()">
+            Generate Recipe
+        </button> 
+        <button onclick="clearRecipe()">
+            Clear
+        </button>
+
+        <div id="result"></div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about">
+
+        <h2>About the Project</h2>
+
+        <p>
+            This Recipe Generator helps users find simple recipes
+            using the ingredients available at home.
+        </p>
+
+        <p>
+            Users can enter the ingredients they have and the website
+            suggests a suitable recipe with ingredients and cooking steps.
+        </p>
+
+    </section>
+
+
+    <!-- Recipes Section -->
+    <section id="recipes">
+
+    <h2>Available Recipes</h2>
+
+    <div class="recipe-list">
+
+        <div class="recipe-card">
+            <h3>Egg Fried Rice</h3>
+            <p>Rice + Egg</p>
+        </div>
+
+        <div class="recipe-card">
+            <h3>Vegetable Fried Rice</h3>
+            <p>Rice + Vegetable</p>
+        </div>
+
+        <div class="recipe-card">
+            <h3>Egg Sandwich</h3>
+            <p>Bread + Egg</p>
+        </div>
+
+        <div class="recipe-card">
+            <h3>Cheese Sandwich</h3>
+            <p>Bread + Cheese</p>
+        </div>
+
+        <div class="recipe-card">
+            <h3>Bread Toast</h3>
+            <p>Bread + Butter</p>
+        </div>
+
+        <div class="recipe-card">
+            <h3>Potato Fry</h3>
+            <p>Potato</p>
+        </div>
+
+        <div class="recipe-card">
+            <h3>Potato Onion Fry</h3>
+            <p>Potato + Onion</p>
+        </div>
+
+        <div class="recipe-card">
+            <h3>Tomato Onion Salad</h3>
+            <p>Tomato + Onion</p>
+        </div>
+
+        <div class="recipe-card">
+            <h3>Tomato Toast</h3>
+            <p>Bread + Tomato</p>
+        </div>
+
+        <div class="recipe-card">
+            <h3>Banana Milkshake</h3>
+            <p>Banana + Milk</p>
+        </div>
+
+        <div class="recipe-card">
+            <h3>Banana Toast</h3>
+            <p>Banana + Bread</p>
+        </div>
+
+        <div class="recipe-card">
+            <h3>Vegetable Noodles</h3>
+            <p>Noodles + Vegetable</p>
+        </div>
+
+        <div class="recipe-card">
+            <h3>Egg Noodles</h3>
+            <p>Noodles + Egg</p>
+        </div>
+
+        <div class="recipe-card">
+            <h3>Tomato Pasta</h3>
+            <p>Pasta + Tomato</p>
+        </div>
+
+        <div class="recipe-card">
+            <h3>Cheese Pasta</h3>
+            <p>Pasta + Cheese</p>
+        </div>
+
+        <div class="recipe-card">
+            <h3>Corn Potato Chaat</h3>
+            <p>Corn + Potato</p>
+        </div>
+
+        <div class="recipe-card">
+            <h3>Chickpea Salad</h3>
+            <p>Chickpeas + Tomato + Onion</p>
+        </div>
+
+        <div class="recipe-card">
+            <h3>Dal Rice</h3>
+            <p>Dal + Rice</p>
+        </div>
+
+        <div class="recipe-card">
+            <h3>Simple Dal</h3>
+            <p>Dal</p>
+        </div>
+
+        <div class="recipe-card">
+            <h3>Rice Pudding</h3>
+            <p>Rice + Milk</p>
+        </div>
+
+        <div class="recipe-card">
+            <h3>Onion Omelette</h3>
+            <p>Egg + Onion</p>
+        </div>
+
+    </div>
+
+</section>
+
+    </section>
+
+
+    <!-- JavaScript -->
+    <script src="/Static/script.js"></script>
+
+</body>
+</html>
