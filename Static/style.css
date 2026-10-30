@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #fffaf7;
+    color: #5f5552;
+}
+
+
+/* ================= NAVBAR ================= */
+
+nav {
+    background: #f8e4dc;
+    padding: 16px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    box-shadow: 0 3px 15px rgba(100, 70, 60, 0.08);
+}
+
+nav h2 {
+    margin: 0;
+    color: #8b5f59;
+    font-size: 23px;
+}
+
+nav a {
+    color: #765f5b;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #b77b72;
+}
+
+
+/* ================= HOME ================= */
+
+#home {
+    min-height: 80vh;
+    padding: 80px 20px 60px;
+    text-align: center;
+
+    background-image:
+        linear-gradient(
+            rgba(255, 250, 247, 0.76),
+            rgba(255, 250, 247, 0.76)
+        ),
+        url("/Static/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#home h1 {
+    font-size: 48px;
+    color: #8b5f59;
+    margin-bottom: 12px;
+}
+
+#home > p {
+    font-size: 18px;
+    color: #7c6c68;
+    margin-bottom: 35px;
+}
+
+label {
+    font-size: 17px;
+    color: #765f5b;
+    font-weight: 600;
+}
+
+
+/* ================= INPUT ================= */
+
+input {
+    width: 330px;
+    max-width: 90%;
+
+    padding: 14px 16px;
+    margin-top: 14px;
+
+    border: 1px solid #e7cfc8;
+    border-radius: 12px;
+
+    background: #fffdfc;
+    color: #5f5552;
+
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #d6a69c;
+
+    box-shadow:
+        0 0 0 3px rgba(214, 166, 156, 0.18);
+}
+
+
+/* ================= BUTTONS ================= */
+
+button {
+    padding: 13px 22px;
+    margin: 10px 5px 0;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #d39a8f;
+    color: white;
+
+    font-size: 15px;
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+button:hover {
+    background: #bd8177;
+    transform: translateY(-2px);
+}
+
+
+/* ================= RESULT ================= */
+
+#result {
+    max-width: 620px;
+
+    margin: 40px auto 0;
+    padding: 30px;
+
+    background: rgba(255, 253, 252, 0.96);
+
+    border: 1px solid #eadbd6;
+    border-radius: 18px;
+
+    box-shadow:
+        0 8px 25px rgba(100, 70, 60, 0.09);
+}
+
+#result h2 {
+    color: #9a6b64;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+#result p {
+    line-height: 1.7;
+    color: #6f6461;
+}
+
+
+/* ================= ABOUT ================= */
+
+#about {
+    padding: 70px 20px;
+
+    background: #f9eee9;
+
+    text-align: center;
+}
+
+#about h2,
+#recipes h2 {
+    color: #8b5f59;
+    font-size: 30px;
+}
+
+#about p {
+    max-width: 700px;
+
+    margin: 10px auto;
+
+    line-height: 1.8;
+    color: #706562;
+}
+
+
+/* ================= RECIPES ================= */
+
+#recipes {
+    padding: 70px 20px;
+
+    text-align: center;
+
+    background: #fffaf7;
+}
+
+.recipe-list {
+    max-width: 1000px;
+
+    margin: 30px auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* ================= RECIPE CARD ================= */
+
+.recipe-card {
+    background: #fffdfc;
+
+    padding: 24px;
+
+    border-radius: 16px;
+
+    border: 1px solid #eadbd6;
+
+    box-shadow:
+        0 5px 18px rgba(100, 70, 60, 0.06);
+
+    transition: 0.25s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 9px 24px rgba(100, 70, 60, 0.11);
+}
+
+.recipe-card h3 {
+    color: #9a6b64;
+    margin-bottom: 8px;
+}
+
+.recipe-card p {
+    color: #77706d;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    #home h1 {
+        font-size: 36px;
+    }
+
+    .recipe-list {
+        grid-template-columns: 1fr;
+    }
+}
